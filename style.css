@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Open+Sans:wght@300;400&family=Quicksand:wght@600&family=Roboto+Slab&family=Rubik&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Open+Sans:wght@300;400&family=Quicksand&family=Roboto+Slab&family=Rubik&display=swap'); */
+:root {
+    --main-bg-color: rgb(12, 145, 76);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+   
+    background-color: black;
+    /* background-color: var(--main-bg-color); */
+    /* <------this above variable is of great importance, because it can help us in changing of color of all, at a same point of time------->  */
+    /* <----you can search some more variable form css variable mdn-----> */
+}
+
+nav {
+    height: 15vh; 
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.my {
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Alkalami', serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 30px 35px;
+
+}
+
+nav ul li :hover {
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: 95px;
+
+}
+
+#bar {
+    height: 4vh;
+    width: 35vw;
+    border-radius: 5px;
+
+}
+
+.search button {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.button {
+    padding: 3px 6px;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.container {
+    min-height: calc(100vh - 8vh - 12vh);
+
+}
+
+.big-picture {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    overflow: hidden;
+   
+}
+
+.box {
+    width: 90vw;
+    margin: auto;
+     /* background-color: aqua; */
+   
+
+}
+
+.box h2 {
+    font-family: 'Rubik', sans-serif;
+    text-transform: capitalize;
+}
+
+.box .box-item {
+    display: inline-flex;
+    flex-direction: column;
+
+}
+
+.box .items-line {
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+.box .items-specification {
+    text-transform: capitalize;
+    font-size: 14px;
+    padding: 2px 0px;
+    text-align: center;
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    /* background-color: var(--main-bg-color); */
+    color: white;
+    font-family: 'Alkalami', serif;
+}
